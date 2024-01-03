@@ -1,4 +1,4 @@
-# 此脚本适配RWKV4 World系列模型，可以在命令行执行与大模型的连续对话功能。
+# 此脚本适配RWKV4/5 World系列模型，可以在命令行执行与大模型的连续对话功能。
 # 依赖：
 # python -m pip install rwkv numpy torch torchvision
 # 模型可以从这里下载：
@@ -110,9 +110,9 @@ if __name__ == '__main__':
         #rwkv = ChatRWKV('E:\\RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096')
         #rwkv = ChatRWKV('E:\\RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096')
         rwkv = ChatRWKV(
-            'E:\\RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096',
+            'E:\\RWKV-5-World-1B5-v2-20231025-ctx4096.pth',
             mirostat_enable=True, # 默认False。改成True使用Mirostat算法进行采样。用False时使用常见的Top-k和Top-p采样。
-            mirostat_tau=1.1 # τ值，默认3。值越大回答的内容用词越丰富。Mirostat算法的作者在github仓库默认此值为3。但是作者仓库代码是基于GPT2模型，不同模型这个值效果是不同的，不能横向比较。
+            mirostat_tau=0.8 # τ值，默认3。值越大回答的内容用词越丰富。Mirostat算法的作者在github仓库默认此值为3。但是作者仓库代码是基于GPT2模型，不同模型这个值效果是不同的，不能横向比较。
         )
 
         while True:
