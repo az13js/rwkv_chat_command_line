@@ -1,3 +1,4 @@
+# 这是我参考LangChain的代码后自己实现的可以在LangChain中使用的模型类。
 from typing import Any, List, Optional
 from langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain_core.language_models.llms import LLM

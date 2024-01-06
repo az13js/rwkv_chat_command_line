@@ -1,3 +1,4 @@
+# 这是我参考LangChain的代码后自己实现的可以在LangChain中使用的对话模型类。
 from .utils import ChatRWKV
 from langchain_core.language_models.chat_models import (
     BaseChatModel,

@@ -1,3 +1,4 @@
+# 这里定义的ChatRWKV是给LangChain的模型类用的。
 import os
 import re
 

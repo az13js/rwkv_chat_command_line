@@ -1,0 +1,3 @@
+*.pth
+rwkv_chat_record.txt
+__pycache__/
